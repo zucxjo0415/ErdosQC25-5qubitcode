@@ -3,7 +3,7 @@
 We implement a Qiskit function `fiveq_ecc` that illustrates the use of the 5-qubit code to correct random Pauli errors. Specifically, this function takes as input a boolean $x \in \mathbb{F}_2$ and an error probability $p$, and outputs a circuit which
 - prepares (not fault tolerantly) the logical $|x_L\rangle$ state for the 5-qubit code,
 - runs this logical state through a uniform Pauli error channel, with error rate $p$ for each physical qubit,
-- measures syndromes for the 5-qubit,
+- measures syndromes for the 5-qubit code,
 - applies the recovery operations as appropriate, and
 - measures the data qubits and decodes the result.
 
